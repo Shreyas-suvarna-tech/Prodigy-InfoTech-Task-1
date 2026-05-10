@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brew & Co — Specialty Café, Mangaluru</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="logo">brew<span>&</span>co</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#hours">Visit</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <i class="ti ti-menu-2"></i>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-badge">Est. 2018 &middot; Mangaluru</div>
+    <h1>Where Every Sip<br>Tells a <span>Story</span></h1>
+    <p>Specialty coffee, freshly baked pastries, and a warm corner to call yours — every single morning.</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="scrollTo('menu')">Explore Menu</button>
+      <button class="btn-outline" onclick="scrollTo('hours')">Find Us</button>
+    </div>
+    <div class="scroll-hint">
+      <i class="ti ti-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="about-grid">
+      <div class="about-visual">
+        <i class="ti ti-coffee" aria-hidden="true"></i>
+        <p>Specialty single-origin beans</p>
+      </div>
+      <div class="about-text">
+        <div class="section-label">Our story</div>
+        <h2 class="section-title">More than just coffee</h2>
+        <p class="section-sub">Born out of a love for great coffee and good conversation, Brew &amp; Co started as a small corner kiosk and grew into Mangaluru's favourite specialty café.</p>
+        <p class="about-body">We source single-origin beans directly from farms in Coorg and Chikmagalur, roast in-house every week, and brew with precision. Every cup is our craft.</p>
+        <div class="stat-row">
+          <div class="stat-card">
+            <div class="stat-num">6+</div>
+            <div class="stat-lbl">Years open</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">12</div>
+            <div class="stat-lbl">Bean origins</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">200+</div>
+            <div class="stat-lbl">Daily guests</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="section menu-section" id="menu">
+    <div class="menu-header">
+      <div class="section-label">What we serve</div>
+      <h2 class="section-title">Our menu</h2>
+    </div>
+    <div class="menu-tabs" id="menuTabs">
+      <div class="tab active" data-cat="coffee">Coffee</div>
+      <div class="tab" data-cat="tea">Tea</div>
+      <div class="tab" data-cat="bites">Bites</div>
+      <div class="tab" data-cat="cold">Cold drinks</div>
+    </div>
+    <div class="menu-grid" id="menuGrid"></div>
+  </section>
+
+  <!-- Visit / Hours Section -->
+  <section class="section" id="hours">
+    <div class="hours-section">
+      <div class="hours-header">
+        <div class="section-label">Come visit</div>
+        <h2 class="section-title">Hours &amp; contact</h2>
+      </div>
+      <div class="hours-grid">
+        <div class="hours-card">
+          <div class="open-badge">
+            <div class="open-dot"></div>
+            Open today
+          </div>
+          <div class="section-label">Opening hours</div>
+          <div class="hours-row">
+            <span class="hours-day">Monday – Friday</span>
+            <span class="hours-time">7:00 AM – 9:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span class="hours-day">Saturday</span>
+            <span class="hours-time">8:00 AM – 10:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span class="hours-day">Sunday</span>
+            <span class="hours-time">9:00 AM – 7:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span class="hours-day">Public holidays</span>
+            <span class="hours-time">10:00 AM – 6:00 PM</span>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="section-label">Get in touch</div>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="ti ti-map-pin" aria-hidden="true"></i></div>
+            <div>
+              <div class="contact-label">Address</div>
+              <div class="contact-val">12, Lighthouse Hill Rd, Hampankatta, Mangaluru</div>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="ti ti-phone" aria-hidden="true"></i></div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-val">+91 98440 12345</div>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="ti ti-mail" aria-hidden="true"></i></div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-val">hello@brewandco.in</div>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="ti ti-brand-instagram" aria-hidden="true"></i></div>
+            <div>
+              <div class="contact-label">Instagram</div>
+              <div class="contact-val">@brewandco.mng</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">brew<span>&</span>co</div>
+    <p>Hampankatta, Mangaluru &middot; &copy; 2026 Brew &amp; Co. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
